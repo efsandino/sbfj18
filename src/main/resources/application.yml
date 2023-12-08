@@ -9,13 +9,12 @@ server:
 ########################
 spring:
   datasource:
-    url: jdbc:h2:mem:es-chanllenge;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    #url: jdbc:h2:mem:es-chanllenge;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH;INIT=CREATE SCHEMA IF NOT EXISTS es-chanllenge;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:es-sbf18;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    #url: jdbc:h2:mem:es-sbf18;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH;INIT=CREATE SCHEMA IF NOT EXISTS es-chanllenge;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     platform: h2
     username: sa
     password:
     driverClassName: org.h2.Driver
-    #schema: es-chanllenge
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
